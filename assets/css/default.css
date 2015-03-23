@@ -28,14 +28,14 @@ body {
 
 #timeline-body .month_left {
 	float: left;
-	width: 10%;	
+	width: 5%;	
 	font-size: 15px;
 	padding-top: 112px;
 }
 
 #timeline-body .month_right {
 	float: left;
-	width: 90%;	
+	width: 95%;	
 }
 
 #timeline-body .month_right .wrapper {
