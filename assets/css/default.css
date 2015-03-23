@@ -75,3 +75,15 @@ body {
 	margin-right: 0px;
 	margin-left: 0px;
 }
+
+#timeline-body .month_right .the_month.month_passed {
+	background-color: #DADADA;	
+	color: #FFFFFF;
+	border-right: none;
+}
+
+#timeline-body .month_right .the_month.month_current {
+	background-color: #01AD1A;	
+	color: #D4ECD6;
+	border-right: none;
+}
