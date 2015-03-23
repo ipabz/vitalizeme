@@ -203,12 +203,17 @@ body {
 #timeline-body .the_contents .tc_left {
 	float: left;
 	width: 50%;
-	border-right: 1px solid #DADCDC;
+	position: relative;
+	z-index: 2;
 }
 
 #timeline-body .the_contents .tc_right {
 	width: 50%;
 	float: right;
+	border-left: 1px solid #DADCDC;
+	min-height: 100px;
+	position: relative;
+	z-index: 1;
 }
 
 #timeline-body .the_contents .tc_left .the_title {
