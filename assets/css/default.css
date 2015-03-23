@@ -1,0 +1,77 @@
+body {
+	background-color: #DAEEFF;
+}
+
+#main-container {
+	background-color: #DAEEFF;
+	font-family: 'Open Sans Condensed', sans-serif;
+	padding: 15px 85px;
+}
+
+#timeline-body {
+	background-color: #FFFFFF;
+	width: 100%;
+	margin: auto;
+	padding: 0px 69px 30px;
+}
+
+#timeline-body .page-title {
+	font-weight: bold;
+	font-size: 21px;
+	padding-top: 28px;	
+	color: #444E4E;
+}
+
+.clearall {
+	clear: both;	
+}
+
+#timeline-body .month_left {
+	float: left;
+	width: 10%;	
+	font-size: 15px;
+	padding-top: 112px;
+}
+
+#timeline-body .month_right {
+	float: left;
+	width: 90%;	
+}
+
+#timeline-body .month_right .wrapper {
+	width: 98%;
+	float: left;	
+}
+
+#timeline-body .month_right .fourth_locked {
+	float: right;	
+	margin-top: 12px;
+}
+
+#timeline-body .month_right .the_month {
+	background-color: #626262;
+	color: #DADADA;
+	border-right: 1px solid #fff;
+	font-size: 15px;
+	height: 35px;
+	line-height: 35px;	
+}
+
+#timeline-body .month_right .the_month.last {
+	border-right: none;	
+}
+
+#timeline-body .month_right .locked_icon {
+	height: 35px;
+	line-height: 35px;
+	padding-left: 11px;
+}
+
+#timeline-body .months {
+	margin-top: -58px;
+}
+
+#timeline-body .months .row {
+	margin-right: 0px;
+	margin-left: 0px;
+}
