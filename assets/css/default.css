@@ -195,3 +195,35 @@ body {
 	margin-right: 11%;
 	margin-top: -105px;
 }
+
+#timeline-body .the_contents {
+	
+}
+
+#timeline-body .the_contents .tc_left {
+	float: left;
+	width: 50%;
+	border-right: 1px solid #DADCDC;
+}
+
+#timeline-body .the_contents .tc_right {
+	width: 50%;
+	float: right;
+}
+
+#timeline-body .the_contents .tc_left .the_title {
+	margin-left: 33%;	
+	font-size: 18px;
+	font-weight: 600;
+	color: #626262;
+	margin-top: 20px;
+}
+
+#timeline-body .center_icon {
+	background: url(../images/center_icon.png) no-repeat;
+	width: 78px;
+	height: 9px;
+	float: right;
+	margin-top: -5px;
+    margin-right: -55px;
+}
