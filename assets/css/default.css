@@ -12,7 +12,7 @@ body {
 	background-color: #FFFFFF;
 	width: 100%;
 	margin: auto;
-	padding: 0px 69px 30px;
+	padding: 0px 69px 0px;
 }
 
 #timeline-body .page-title {
@@ -231,4 +231,71 @@ body {
 	float: right;
 	margin-top: -5px;
     margin-right: -55px;
+}
+
+#timeline-body .article {
+	
+}
+
+#timeline-body .article.now {
+	margin-top: -14px;
+}
+
+#timeline-body .article .a_title {
+	font-size: 18px;
+	font-weight: 600;
+	color: #C9C9C9;
+	
+	margin-bottom: 15px;
+}
+
+#timeline-body .article .a_title .box {
+	display: inline-block;
+	background: url(../images/box.png) no-repeat;
+	width: 9px;
+	height: 9px;
+	margin-top: 10px;
+	margin-right: 25px;	
+	margin-left: -5px;
+}
+
+#timeline-body .article .a_title.first {
+	margin-left: 67px;
+	color: #2654af;
+}
+
+#timeline-body .article .topics {
+	margin-left: 67px;
+	margin-right: 10px;	
+	margin-bottom: 23px;
+}
+
+#timeline-body .article .topics .topic {
+	height: 36px;
+	line-height: 36px;
+	border: 1px solid #444E4E;
+	background-color: #FFF;	
+	padding-left: 13px;
+	padding-right: 13px;
+	font-size: 12px;
+	color: #444E4E;
+	margin-bottom: 3px;
+}
+
+#timeline-body .article .topics .topic:hover {
+	background-color: #EEEEEE;
+	cursor: pointer;	
+}
+
+#timeline-body .article .topics .topic .star {
+	float: right;
+	background: url(../images/star.png) no-repeat;
+	width: 14px;
+	height: 12px;	
+	display: inline-block;
+	margin-top: 10px;
+}
+
+#timeline-body .article .topics .topic strong {
+	color: #3F4949;	
 }
