@@ -87,3 +87,111 @@ body {
 	color: #D4ECD6;
 	border-right: none;
 }
+
+#timeline-body .steps_lines {
+	margin-top: -105px;
+	height: 192px;
+}
+
+#timeline-body .steps_lines .sl_left {
+	float: left;
+	width: 50%;	
+}
+
+#timeline-body .steps_lines .sl_right {
+	float: right;
+	width: 50%;	
+}
+
+#timeline-body .steps_lines .sl_left .two_arrow {
+	border-left: 1px solid #DADCDC;
+	border-bottom: 1px solid #DADCDC;
+	height: 87px;
+	margin-left: 33%;
+}
+
+#timeline-body .steps_lines .sl_left .one_arrow {
+	border-left: 1px solid #DADCDC;
+	border-bottom: 1px solid #DADCDC;
+	height: 87px;
+	margin-left: 18%;
+}
+
+#timeline-body .steps_lines .sl_left .three_arrow {
+	border-left: 1px solid #DADCDC;
+	border-bottom: 1px solid #DADCDC;
+	height: 87px;
+	margin-left: 49%;
+}
+
+#timeline-body .steps_lines .sl_left .four_arrow {
+	border-left: 1px solid #DADCDC;
+	border-bottom: 1px solid #DADCDC;
+	height: 122px;
+	margin-left: 64%;
+	margin-top: -35px;
+}
+
+#timeline-body .steps_lines .sl_left .five_arrow {
+	border-left: 1px solid #DADCDC;
+	border-bottom: 1px solid #DADCDC;
+	height: 122px;
+	margin-left: 80%;
+	margin-top: -35px;
+}
+
+#timeline-body .steps_lines .sl_left .six_arrow {
+	border-left: 1px solid #DADCDC;
+	border-bottom: 1px solid #DADCDC;
+	height: 122px;
+	margin-left: 95%;
+	margin-top: -35px;
+}
+
+#timeline-body .steps_lines .sl_right .seven_arrow {
+	border-right: 1px solid #DADCDC;
+	border-bottom: 1px solid #DADCDC;
+	height: 157px;
+	margin-right: 89%;
+	margin-top: -70px;
+}
+
+#timeline-body .steps_lines .sl_right .eight_arrow {
+	border-right: 1px solid #DADCDC;
+	border-bottom: 1px solid #DADCDC;
+	height: 157px;
+	margin-right: 74%;
+	margin-top: -70px;
+}
+
+#timeline-body .steps_lines .sl_right .nine_arrow {
+	border-right: 1px solid #DADCDC;
+	border-bottom: 1px solid #DADCDC;
+	height: 157px;
+	margin-right: 58%;
+	margin-top: -70px;
+}
+
+#timeline-body .steps_lines .sl_right .ten_arrow {
+	border-right: 1px solid #DADCDC;
+	border-bottom: 1px solid #DADCDC;
+	height: 192px;
+	margin-right: 42%;
+	margin-top: -105px;
+}
+
+#timeline-body .steps_lines .sl_right .eleven_arrow {
+	border-right: 1px solid #DADCDC;
+	border-bottom: 1px solid #DADCDC;
+	height: 192px;
+	margin-right: 27%;
+	margin-top: -105px;
+}
+
+#timeline-body .steps_lines .sl_right .twelve_arrow {
+	border-right: 1px solid #DADCDC;
+	border-bottom: 1px solid #DADCDC;
+	height: 192px;
+	margin-right: 11%;
+	margin-top: -105px;
+}
