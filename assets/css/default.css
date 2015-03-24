@@ -243,6 +243,10 @@ body {
 	margin-top: -15px;
 }
 
+#timeline-body .article.now2 {
+	margin-top: 10px;
+}
+
 #timeline-body .article.current_step .a_title {	
 	color: #2654af;
 }

@@ -16,15 +16,15 @@
                 <div class="wrapper">
                     <div class="row">
                         <div class="col-md-9"></div>
-                        <div class="col-md-1 the_month text-center">Ten</div>
-                        <div class="col-md-1 the_month text-center">Eleven</div>
-                        <div class="col-md-1 the_month text-center last">Twelve</div>
+                        <div class="col-md-1 the_month text-center <?php print (($month == 10) ? 'month_current' : (($month > 10) ? 'month_passed' : '')); ?>">Ten</div>
+                        <div class="col-md-1 the_month text-center <?php print (($month == 11) ? 'month_current' : (($month > 11) ? 'month_passed' : '')); ?>">Eleven</div>
+                        <div class="col-md-1 the_month text-center last <?php print (($month == 12) ? 'month_current' : (($month > 12) ? 'month_passed' : '')); ?>">Twelve</div>
                     </div>
                     <div class="row">
                         <div class="col-md-6"></div>
-                        <div class="col-md-1 the_month text-center">Seven</div>
-                        <div class="col-md-1 the_month text-center">Eight</div>
-                        <div class="col-md-1 the_month text-center last">Nine</div>
+                        <div class="col-md-1 the_month text-center <?php print (($month == 7) ? 'month_current' : (($month > 7) ? 'month_passed' : '')); ?>">Seven</div>
+                        <div class="col-md-1 the_month text-center <?php print (($month == 8) ? 'month_current' : (($month > 8) ? 'month_passed' : '')); ?>">Eight</div>
+                        <div class="col-md-1 the_month text-center last <?php print (($month == 9) ? 'month_current' : (($month > 9) ? 'month_passed' : '')); ?>">Nine</div>
                         <div class="col-md-1 locked_icon">
                             <?php
 							if ($month <= 9) {
@@ -37,9 +37,9 @@
                     </div>
                     <div class="row">
                         <div class="col-md-3"></div>
-                        <div class="col-md-1 the_month text-center">Four</div>
-                        <div class="col-md-1 the_month text-center">Five</div>
-                        <div class="col-md-1 the_month text-center last">Six</div>
+                        <div class="col-md-1 the_month text-center <?php print (($month == 4) ? 'month_current' : (($month > 4) ? 'month_passed' : '')); ?>">Four</div>
+                        <div class="col-md-1 the_month text-center <?php print (($month == 5) ? 'month_current' : (($month > 5) ? 'month_passed' : '')); ?>">Five</div>
+                        <div class="col-md-1 the_month text-center last <?php print (($month == 6) ? 'month_current' : (($month > 6) ? 'month_passed' : '')); ?>">Six</div>
                         <div class="col-md-1 locked_icon">
                             <?php
 							if ($month <= 6) {
@@ -51,9 +51,9 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-1 the_month text-center month_current">One</div>
-                        <div class="col-md-1 the_month text-center">Two</div>
-                        <div class="col-md-1 the_month text-center last">Three</div>
+                        <div class="col-md-1 the_month text-center <?php print (($month == 1) ? 'month_current' : (($month > 1) ? 'month_passed' : '')); ?>">One</div>
+                        <div class="col-md-1 the_month text-center <?php print (($month == 2) ? 'month_current' : (($month > 2) ? 'month_passed' : '')); ?>">Two</div>
+                        <div class="col-md-1 the_month text-center last <?php print (($month == 3) ? 'month_current' : (($month > 3) ? 'month_passed' : '')); ?>">Three</div>
                         <div class="col-md-1 locked_icon">
                         	<?php
 							if ($month <= 3) {
@@ -100,7 +100,7 @@
             </div>
             <div class="tc_right">
             
-                <div class="article now current_step">
+                <div class="article <?php print (($month <= 6) ? 'now' : 'now2'); ?> current_step">
                     <div class="a_title"><span class="box"></span>Introduction</div>
                     <div class="topics">
                         <div class="topic"><a class="thelink" href="">Stop treating symptoms <strong>CURE</strong> the cause.</a> <a href="" class="star glyphicon glyphicon-star-empty"></a></div>
