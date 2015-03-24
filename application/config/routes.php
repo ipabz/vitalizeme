@@ -38,8 +38,10 @@
 |
 */
 
-$route['default_controller'] = "welcome";
+$route['default_controller'] = "pages/timeline";
 $route['404_override'] = '';
+
+$route['timeline/(:any)'] = "pages/timeline/$1";
 
 
 /* End of file routes.php */

@@ -242,14 +242,17 @@ body {
 }
 
 #timeline-body .article.now {
-	margin-top: -14px;
+	margin-top: -15px;
+}
+
+#timeline-body .article.current_step .a_title {	
+	color: #2654af;
 }
 
 #timeline-body .article .a_title {
 	font-size: 18px;
 	font-weight: 600;
 	color: #C9C9C9;
-	
 	margin-bottom: 15px;
 }
 
@@ -261,6 +264,14 @@ body {
 	margin-top: 10px;
 	margin-right: 25px;	
 	margin-left: -5px;
+}
+
+#timeline-body .article.current_step .a_title .box {
+	background: url(../images/center_icon.png) no-repeat;
+	width: 78px;
+	height: 9px;
+	margin-left: -24px;
+	margin-right: 13px;
 }
 
 #timeline-body .article .a_title.first {
