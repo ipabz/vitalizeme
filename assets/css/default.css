@@ -56,6 +56,10 @@ body {
 	line-height: 35px;	
 }
 
+#timeline-body .month_right .the_month:hover {
+	cursor: pointer;	
+}
+
 #timeline-body .month_right .the_month.last {
 	border-right: none;	
 }
@@ -298,4 +302,8 @@ body {
 
 #timeline-body .article .topics .topic strong {
 	color: #3F4949;	
+}
+
+.hidethis {
+	visibility: hidden;
 }
