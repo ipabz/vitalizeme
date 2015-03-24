@@ -20,7 +20,7 @@ if ($timeline_data != NULL) {
             	<?php
 				foreach($timeline_data['topics'][$chapter_id] as $topic) {
 				?>
-                <div class="topic"><a class="thelink" href="<?php print site_url('timeline/view_topic/'.$topic['topic_id']); ?>"><?php print $topic['topic']; ?></a> <a href="" class="star glyphicon glyphicon-star-empty"></a></div>
+                <div class="topic"><a class="thelink" href="<?php print site_url('timeline/view_topic/'.$topic['topic_id']); ?>"><?php print $topic['topic']; ?></a> <a href="<?php print site_url('timeline/track/'.$topic['topic_id']); ?>" class="star glyphicon glyphicon-star<?php print $this->timeline_model->topic_done($topic['topic_id']); ?>"></a></div>
                 <?php	
 				}
 				?>

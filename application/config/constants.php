@@ -44,6 +44,7 @@ define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 define('TABLE_MODULES', 'modules');
 define('TABLE_CHAPTERS', 'chapters');
 define('TABLE_TOPICS', 'topics');
+define('TABLE_TRACKING', 'tracking');
 
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */

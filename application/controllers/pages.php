@@ -59,6 +59,12 @@ class Pages extends CI_Controller {
 		$this->load->view('common/footer');
 	}
 	
+	public function track($topic_id)
+	{
+		$this->load->model('timeline_model');
+		$this->timeline_model->track($topic_id);	
+	}
+	
 }
 
 /* End of file pages.php */
