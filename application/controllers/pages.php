@@ -30,18 +30,26 @@ class Pages extends CI_Controller {
 	
 	protected function view($page_name="home", $data)
 	{
-		$this->load->view('pages/'.$page_name.'_page', $data);		
+		$this->load->view('pages/'.$page_name.'/'.$page_name.'_page', $data);		
 	}
 	
 	public function timeline($month=1)
 	{
+		$this->load->model('timeline_model');
+		
 		$data['page_title'] = 'Timeline';
 		$data['month'] = $month;
 		$data['month_word'] = $this->months[$month];
+		$data['timeline_data'] = $this->timeline_model->get_topics($month);
 		
 		$this->load->view('common/header', $data);
 		$this->view('timeline', $data);
 		$this->load->view('common/footer');
+	}
+	
+	public function timeline_topic_details()
+	{
+		
 	}
 	
 }

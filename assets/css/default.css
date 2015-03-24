@@ -215,6 +215,7 @@ body {
 	min-height: 100px;
 	position: relative;
 	z-index: 1;
+	padding-bottom: 50px;
 }
 
 #timeline-body .the_contents .tc_left .the_title {
