@@ -41,6 +41,7 @@ class Pages extends CI_Controller {
 		$data['month'] = $month;
 		$data['month_word'] = $this->months[$month];
 		$data['timeline_data'] = $this->timeline_model->get_topics($month);
+		$data['current_step'] = $this->timeline_model->current_step();
 		
 		$this->load->view('common/header', $data);
 		$this->view('timeline', $data);
@@ -59,10 +60,10 @@ class Pages extends CI_Controller {
 		$this->load->view('common/footer');
 	}
 	
-	public function track($topic_id)
+	public function track($topic_id, $chapter_id)
 	{
 		$this->load->model('timeline_model');
-		$this->timeline_model->track($topic_id);	
+		$this->timeline_model->track($topic_id, $chapter_id);	
 	}
 	
 }

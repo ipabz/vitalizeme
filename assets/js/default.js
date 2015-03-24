@@ -16,9 +16,12 @@ $(function () {
 		var _ref = $(this);
 		var cl = _ref.attr('class');
 		cl = cl.replace('-empty', '');
+		var c_id = $(this).attr('data-chapter-id');
 		
 		$.get($(this).attr('href'), function() {
 			_ref.attr('class', cl);
+			$('.article').removeClass('current_step');
+			$('#chapter'+c_id).addClass('current_step');
 			$('.loading_container').hide();
 		});
 		

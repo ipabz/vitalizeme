@@ -62,7 +62,23 @@ class Timeline_model extends CI_Model {
 		return $data;
 	}
 	
-	public function track($topic_id)
+	public function current_step()
+	{
+		$ip_address = $this->input->ip_address();	
+		
+		$this->db->where('ip_address', $ip_address);
+		$query = $this->db->get(TABLE_TRACKING);
+		$data = 0;
+		
+		if ($query->num_rows() > 0) {
+			$data = $query->row()->current_topic;
+		}
+		
+		return $data;
+		
+	}
+	
+	public function track($topic_id, $chapter_id)
 	{
 		$ip_address = $this->input->ip_address();	
 		
@@ -88,6 +104,7 @@ class Timeline_model extends CI_Model {
 			}
 			
 			$data['last_updated'] = @time();
+			$data['current_topic'] = "$chapter_id";
 			
 			$this->db->where('track_id', $row->track_id);
 			$this->db->update(TABLE_TRACKING, $data);
@@ -99,6 +116,7 @@ class Timeline_model extends CI_Model {
 			$data['ip_address'] = $ip_address;
 			$data['date_created'] = @time();
 			$data['last_updated'] = @time();
+			$data['current_topic'] = "$chapter_id"; 
 			
 			$this->db->insert(TABLE_TRACKING, $data);
 			
