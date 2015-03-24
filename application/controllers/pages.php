@@ -33,9 +33,11 @@ class Pages extends CI_Controller {
 		$this->load->view('pages/'.$page_name.'_page', $data);		
 	}
 	
-	public function timeline($month='1')
+	public function timeline($month=1)
 	{
 		$data['page_title'] = 'Timeline';
+		$data['month'] = $month;
+		$data['month_word'] = $this->months[$month];
 		
 		$this->load->view('common/header', $data);
 		$this->view('timeline', $data);

@@ -5,8 +5,14 @@
         
         <section class="months">                	
             <div class="month_left">Month</div>
-            <div class="month_right">
-                <img class="fourth_locked" src="assets/images/locked_icon.png" width="9" />
+            <div class="month_right">                
+                <?php
+				if ($month < 12) {
+				?>
+				<img class="fourth_locked" src="assets/images/locked_icon.png" width="9" />
+				<?php
+				}
+				?>
                 <div class="wrapper">
                     <div class="row">
                         <div class="col-md-9"></div>
@@ -20,7 +26,13 @@
                         <div class="col-md-1 the_month text-center">Eight</div>
                         <div class="col-md-1 the_month text-center last">Nine</div>
                         <div class="col-md-1 locked_icon">
+                            <?php
+							if ($month <= 9) {
+							?>
                             <img src="assets/images/locked_icon.png" width="9" />
+                            <?php
+							}
+							?>
                         </div>
                     </div>
                     <div class="row">
@@ -29,7 +41,13 @@
                         <div class="col-md-1 the_month text-center">Five</div>
                         <div class="col-md-1 the_month text-center last">Six</div>
                         <div class="col-md-1 locked_icon">
+                            <?php
+							if ($month <= 6) {
+							?>
                             <img src="assets/images/locked_icon.png" width="9" />
+                            <?php
+							}
+							?>
                         </div>
                     </div>
                     <div class="row">
@@ -37,7 +55,13 @@
                         <div class="col-md-1 the_month text-center">Two</div>
                         <div class="col-md-1 the_month text-center last">Three</div>
                         <div class="col-md-1 locked_icon">
+                        	<?php
+							if ($month <= 3) {
+							?>
                             <img src="assets/images/locked_icon.png" width="9" />
+                            <?php
+							}
+							?>
                         </div>
                     </div>
                 </div>
@@ -48,11 +72,23 @@
         
         <section class="steps_lines">                	
             <div class="sl_left">
-                <div class="one_arrow"></div> 
+            	<?php
+				if ($month <= 6) {
+				?>
+                <div class="<?php print $month_word; ?>_arrow"></div>
+                <?php
+				}
+				?>                 
             </div>
-            <div class="sl_right">                    	                   
+            <div class="sl_right">
+            	<?php
+				if ($month > 6) {
+				?>
+                <div class="<?php print $month_word; ?>_arrow"></div>
+                <?php
+				}
+				?>                     	                   
             </div>
-            <!--<div class="center_icon"></div>-->
             <div class="clearall"></div>
             
         </section>
@@ -67,33 +103,33 @@
                 <div class="article now current_step">
                     <div class="a_title"><span class="box"></span>Introduction</div>
                     <div class="topics">
-                        <div class="topic">Stop treating symptoms <strong>CURE</strong> the cause. <span class="star"></span></div>
-                        <div class="topic"><strong>Mindset Matters:</strong> Fixed Mindset and Growth Mindset <span class="star"></span></div>
+                        <div class="topic"><a class="thelink" href="">Stop treating symptoms <strong>CURE</strong> the cause.</a> <a href="" class="star glyphicon glyphicon-star-empty"></a></div>
+                        <div class="topic"><a class="thelink" href=""><strong>Mindset Matters:</strong> Fixed Mindset and Growth Mindset</a> <a href="" class="star glyphicon glyphicon-star-empty"></a></div>
                     </div>
                 </div>
                 
                 <div class="article">
                     <div class="a_title"><span class="box"></span>Mind-Body</div>
                     <div class="topics">
-                        <div class="topic"><strong>Stress:</strong>  About stress and the body <span class="star"></span></div>
-                        <div class="topic"><strong>Stress Management:</strong>  The five Bs <span class="star"></span></div>
-                        <div class="topic"><strong>Exercise:</strong>  When you feel stress, get physical. <span class="star"></span></div>
+                        <div class="topic"><a class="thelink" href=""><strong>Stress:</strong>  About stress and the body</a> <a href="" class="star glyphicon glyphicon-star-empty"></a></div>
+                        <div class="topic"><a class="thelink" href=""><strong>Stress Management:</strong>  The five Bs</a> <a href="" class="star glyphicon glyphicon-star-empty"></a></div>
+                        <div class="topic"><a class="thelink" href=""><strong>Exercise:</strong>  When you feel stress, get physical.</a> <a href="" class="star glyphicon glyphicon-star-empty"></a></div>
                     </div>
                 </div>
                 
                 <div class="article">
                     <div class="a_title"><span class="box"></span>Nutrition</div>
                     <div class="topics">
-                        <div class="topic">Stop treating symptoms <strong>CURE</strong> the cause. <span class="star"></span></div>
-                        <div class="topic"><strong>Mindset Matters:</strong> Fixed Mindset and Growth Mindset <span class="star"></span></div>
+                        <div class="topic"><a class="thelink" href="">Stop treating symptoms <strong>CURE</strong> the cause.</a> <a href="" class="star glyphicon glyphicon-star-empty"></a></div>
+                        <div class="topic"><a class="thelink" href=""><strong>Mindset Matters:</strong> Fixed Mindset and Growth Mindset</a> <a href="" class="star glyphicon glyphicon-star-empty"></a></div>
                     </div>
                 </div>
                 
                 <div class="article">
                     <div class="a_title"><span class="box"></span>Nutrition</div>
                     <div class="topics">
-                        <div class="topic">Stop treating symptoms <strong>CURE</strong> the cause. <span class="star"></span></div>
-                        <div class="topic"><strong>Mindset Matters:</strong> Fixed Mindset and Growth Mindset <span class="star"></span></div>
+                        <div class="topic"><a class="thelink" href="">Stop treating symptoms <strong>CURE</strong> the cause.</a> <a href="" class="star glyphicon glyphicon-star-empty"></a></div>
+                        <div class="topic"><a class="thelink" href=""><strong>Mindset Matters:</strong> Fixed Mindset and Growth Mindset</a> <a href="" class="star glyphicon glyphicon-star-empty"></a></div>
                     </div>
                 </div>
             
