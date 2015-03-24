@@ -4,7 +4,6 @@ body {
 
 #main-container {
 	background-color: #DAEEFF;
-	font-family: 'Open Sans Condensed', sans-serif;
 	padding: 15px 85px;
 }
 
@@ -219,7 +218,7 @@ body {
 #timeline-body .the_contents .tc_left .the_title {
 	margin-left: 33%;	
 	font-size: 18px;
-	font-weight: 600;
+	font-weight: 500;
 	color: #626262;
 	margin-top: 20px;
 }
