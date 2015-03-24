@@ -227,9 +227,10 @@ body {
 	background: url(../images/center_icon.png) no-repeat;
 	width: 78px;
 	height: 9px;
-	float: right;
-	margin-top: -5px;
-    margin-right: -55px;
+	float: left;
+	margin-top: 82px;
+	bottom: 0px;
+	margin-left: -23px;
 }
 
 #timeline-body .article {
