@@ -51,7 +51,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-1 the_month text-center <?php print (($month == 1) ? 'month_current' : (($month > 1) ? 'month_passed' : '')); ?>">One</div>
+                        <div <?php print (($month == 1 OR $month > 1) ? 'data-href="'.site_url('timeline/1').'"' : ''); ?> class="col-md-1 the_month text-center <?php print (($month == 1) ? 'month_current' : (($month > 1) ? 'month_passed' : '')); ?>">One</div>
                         <div class="col-md-1 the_month text-center <?php print (($month == 2) ? 'month_current' : (($month > 2) ? 'month_passed' : '')); ?>">Two</div>
                         <div class="col-md-1 the_month text-center last <?php print (($month == 3) ? 'month_current' : (($month > 3) ? 'month_passed' : '')); ?>">Three</div>
                         <div class="col-md-1 locked_icon">

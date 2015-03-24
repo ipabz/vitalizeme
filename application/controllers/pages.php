@@ -47,9 +47,16 @@ class Pages extends CI_Controller {
 		$this->load->view('common/footer');
 	}
 	
-	public function timeline_topic_details()
+	public function timeline_topic_details($topic_id)
 	{
+		$this->load->model('timeline_model');
 		
+		$data['page_title'] = 'Timeline';
+		$data['topic'] = $this->timeline_model->get_topic($topic_id);
+		
+		$this->load->view('common/header', $data);
+		$this->load->view('pages/timeline/topic_view');
+		$this->load->view('common/footer');
 	}
 	
 }

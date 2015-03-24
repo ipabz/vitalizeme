@@ -29,6 +29,18 @@ class Timeline_model extends CI_Model {
 		
 	}
 	
+	public function get_topic($topic_id)
+	{
+		$this->db->where('topic_id', $topic_id);
+		$query = $this->db->get(TABLE_TOPICS);
+		
+		if ($query->num_rows() > 0) {
+			return $query->row_array();
+		}
+		
+		return NULL;
+	}
+	
 }
 
 /* End of file timeline_model.php */

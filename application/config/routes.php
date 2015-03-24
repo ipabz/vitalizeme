@@ -42,6 +42,7 @@ $route['default_controller'] = "pages/timeline";
 $route['404_override'] = '';
 
 $route['timeline/(:num)'] = "pages/timeline/$1";
+$route['timeline/view_topic/(:num)'] = "pages/timeline_topic_details/$1";
 
 
 /* End of file routes.php */
