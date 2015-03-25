@@ -27,5 +27,11 @@ $(function () {
 		
 		return false;
 	});
+	
+	var whitebar = $('.whitebar');
+	var whitebar_parent = whitebar.parent();
+	whitebar.height((whitebar_parent.height() * .93 ));
+	var style = whitebar.attr('style');
+	whitebar.attr('style', style+'margin-top:'+(whitebar_parent.height() - (whitebar_parent.height() * .93 ))+'px');
 		
 });
