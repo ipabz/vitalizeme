@@ -17,7 +17,7 @@
         <script src="assets/js/respond.min.js"></script>
         <![endif]-->
         
-        <link href="assets/css/default.css" rel="stylesheet">
+        <link href="assets/css/default.css?r=<?php print @time(); ?>" rel="stylesheet">
         
     </head>
     <body>

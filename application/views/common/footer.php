@@ -3,6 +3,6 @@
         <!-- Include all compiled plugins (below), or include individual files as needed --> 
         <script src="assets/js/bootstrap.min.js"></script>
         
-        <script src="assets/js/default.js"></script>
+        <script src="assets/js/default.js?r=<?php print @time(); ?>"></script>
     </body>
 </html>
