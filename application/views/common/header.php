@@ -21,4 +21,4 @@
         
     </head>
     <body>
-    	<section class="loading_container"><img src="assets/images/loading.gif" width="100" /></section>
+    	<!--<section class="loading_container"><img src="assets/images/loading.gif" width="100" /></section>-->
