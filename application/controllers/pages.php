@@ -33,7 +33,7 @@ class Pages extends CI_Controller {
 		$this->load->view('pages/'.$page_name.'/'.$page_name.'_page', $data);		
 	}
 	
-	public function timeline($month=1)
+	public function timeline($month=1,$override="no")
 	{
 		$this->load->model('timeline_model');
 		
