@@ -29,6 +29,21 @@ class Timeline_model extends CI_Model {
 		
 	}
 	
+	protected function count_topics($topics_data)
+	{
+		$topics = $topics_data['topics'];
+		$counter = 0;
+		
+		if ($topics) {
+			foreach($topics as $key => $val) {
+				$counter += count($val);
+			}
+		}
+		
+		return $counter;
+		
+	}
+	
 	public function get_topic($topic_id)
 	{
 		$this->db->where('topic_id', $topic_id);
@@ -121,6 +136,29 @@ class Timeline_model extends CI_Model {
 			$this->db->insert(TABLE_TRACKING, $data);
 			
 		}
+	}
+	
+	public function current_month()
+	{
+		$ip_address = $this->input->ip_address();	
+		
+		$this->db->where('ip_address', $ip_address);
+		$query = $this->db->get(TABLE_TRACKING);
+		$month = 1;
+		
+		if ($query->num_rows() > 0) {
+			$data = $query->row()->topic_done;
+			$exp = explode(',', $data);
+			
+			$tcount = $this->count_topics($this->get_topics($month));
+			
+			while(count($exp) >= $tcount && $tcount > 0 ) {
+				$month++;
+				$tcount = $this->count_topics($this->get_topics($month));
+			}
+		}
+		
+		return $month;
 	}
 	
 }
