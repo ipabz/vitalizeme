@@ -380,3 +380,168 @@ body {
 	padding: 0;
 	margin-left: 15px;
 }
+
+.mymodal-popup-wrapper {
+	position: absolute;
+	width: 100%;
+	background: rgba(0,0,0,.3);
+	display: none;
+}
+
+.mymodal-popup {
+	width: 838px;
+	margin: 62px auto 26px;
+	background: #fff;	
+	padding: 39px 86px;
+}
+
+.mymodal-popup .headerpart {
+	border-bottom: 1px solid #DADCDC;
+	padding-bottom: 29px;
+}
+
+.mymodal-popup .headerpart a {
+	color: #444E4E;	
+}
+
+.mymodal-popup .headerpart .stars a {
+	margin-left: 9px;
+}
+
+.mymodal-popup .headerpart .sos {
+	text-align: right;	
+	margin-top: 16px;
+}
+
+.mymodal-popup .headerpart .sos a {
+	margin-left: 22px;
+	
+}
+
+.mymodal-popup .headerpart .theright {
+	border-left: 1px solid #DADCDC;	
+	padding-top: 15px;
+	padding-left: 87px;
+	padding-bottom: 5px;
+}
+
+.mymodal-popup .part, h2 {
+	font-family:"Myriad Pro";
+	font-size:21px;
+	color:#444e4e;
+	
+}
+
+.mymodal-popup .part1{
+	font-size:15px;
+	margin-top:-5px;
+}
+
+.mymodal-popup li {
+	margin-left:30px;
+	font-size:15px;
+}
+
+.mymodal-popup p {
+	font-size: 15px;
+	height: 10px;
+	margin-left: 350px;
+	margin-top: -81px;
+	height: 90px;
+	float: left;
+}
+
+.mymodal-popup .left{
+	margin-left: 320px;
+	margin-top: -64px;
+	
+}
+
+.mymodal-popup .left2{
+	margin-left: 320px;
+	margin-top: -105px;
+	
+}
+
+.mymodal-popup .reg{
+	  width: 340px;
+}
+
+.mymodal-popup .left3{
+	margin-left: 320px;
+	margin-top: -110px;
+	
+}
+
+.mymodal-popup .part2 {
+	font-size:15px;
+	width:250px;
+	color:#f7385b;
+}
+
+.mymodal-popup .bleft {
+	border-left: 1px solid #DADCDC;
+	padding-top: 75px;
+	padding-left: 87px;
+	margin-top: -80px;
+	float: left;
+	margin-left: 250px;
+	padding-bottom: 5px;
+}
+
+.mymodal-popup .part3 {
+	  font-size: 15px;
+	color: #ff6700;
+	margin-left: 280px;
+	margin-top: -65px;
+}
+
+.mymodal-popup .image{
+	width: 700px;
+	margin-top: 80px;
+}
+
+.mymodal-popup .img2 {
+	margin-left:20px;
+}
+
+.mymodal-popup .img3 {
+	margin-left:20px;
+}
+
+.mymodal-popup .3img {
+	font-size:19px;
+	color:#fefefe;
+}
+
+.mymodal-popup .get {
+	background-color: #00D3FB;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	padding-left: 60px;
+	width: 210px;
+	margin-top: -5px;
+	color:#fefefe;
+}
+
+.mymodal-popup .get1 {
+	background-color: #00D3FB;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	padding-left: 60px;
+	width: 210px;
+	margin-top: -56px;
+	margin-left: 234px;
+	color: #fefefe;
+}
+
+.mymodal-popup .get2 {
+	background-color: #00D3FB;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	padding-left: 60px;
+	width: 210px;
+	margin-top: -61px;
+	margin-left: 469px;
+	color: #fefefe;
+}

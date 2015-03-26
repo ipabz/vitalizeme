@@ -1,4 +1,22 @@
 $(function () {
+	var modal = null;
+	
+	$(document).delegate('.themodalhere', 'click', function(e) {
+		e.preventDefault();
+		$('.mymodal-popup-wrapper').slideDown('fast');	
+	});
+	
+	$('.mymodal-popup-wrapper').click(function(e) {
+        modal = setTimeout(function() {
+				$('.mymodal-popup-wrapper').hide();
+			}, 100);
+    });
+	
+	$('.mymodal-popup').click(function(e) {
+		e.preventDefault();
+        clearTimeout(modal);
+		return false;
+    });
 	
 	$(document).delegate('.thelink', 'click', function(e) {
 		//$('.loading_container').show();	
