@@ -275,7 +275,7 @@ class Migration_Initial_schema extends CI_Migration {
 			}
 			
 			if ($start && strpos($val, 'class="c5"')) {
-				$data[$counter]['name']= strip_tags($val, '<span><b><strong><em><i><u>');
+				$data[$counter]['name']= strip_tags($val, '<span><b><strong><em><i><u><a>');
 			} else if (!$start && $val != '</ul>') {
 				$sub .= $val;	
 			}
