@@ -42,6 +42,7 @@ class Pages extends CI_Controller {
 		$data['month_word'] = $this->months[$month];
 		$data['timeline_data'] = $this->timeline_model->get_topics($month);
 		$data['current_step'] = $this->timeline_model->current_step();
+		$data['current_month'] = 3;
 		
 		$this->load->view('common/header', $data);
 		$this->view('timeline', $data);
