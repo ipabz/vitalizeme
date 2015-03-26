@@ -375,3 +375,8 @@ body {
 	background: white;
 	margin-left: -1px;
 }
+
+.topicview ol, .topicview ul {
+	padding: 0;
+	margin-left: 15px;
+}
