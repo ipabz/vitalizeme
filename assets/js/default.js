@@ -46,6 +46,20 @@ $(function () {
 		return false;
 	});
 	
+	$('#timeline-body .article .topics .topic').hover(function(e) { 
+			var parent = $(this).parent();
+			var prev = parent.prev();
+			
+			prev.addClass('hovered_head');
+		}, function(e) {
+				
+				var parent = $(this).parent();
+				var prev = parent.prev();
+				
+				prev.removeClass('hovered_head');
+				
+			});
+	
 	var whitebar = $('.whitebar');
 	var whitebar_parent = whitebar.parent();
 	whitebar.height((whitebar_parent.height() * .93 ));

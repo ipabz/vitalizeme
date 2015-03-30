@@ -376,6 +376,10 @@ body {
 	margin-left: -1px;
 }
 
+#timeline-body .article .a_title.hovered_head {
+	color: #2654af;
+}
+
 .topicview ol, .topicview ul {
 	padding: 0;
 	margin-left: 15px;
