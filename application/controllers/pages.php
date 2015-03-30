@@ -56,9 +56,9 @@ class Pages extends CI_Controller {
 		$data['page_title'] = 'Timeline';
 		$data['topic'] = $this->timeline_model->get_topic($topic_id);
 		
-		$this->load->view('common/header', $data);
-		$this->load->view('pages/timeline/topic_view');
-		$this->load->view('common/footer');
+		//$this->load->view('common/header', $data);
+		$this->load->view('pages/timeline/topic_view', $data);
+		//$this->load->view('common/footer');
 	}
 	
 	public function track($topic_id, $chapter_id)

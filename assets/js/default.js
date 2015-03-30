@@ -2,7 +2,7 @@ $(function () {
 	var modal = null;
 	
 	$(document).delegate('.themodalhere', 'click', function(e) {
-		e.preventDefault();
+		e.preventDefault(); 
 		$('.mymodal-popup-wrapper').slideDown('fast');	
 	});
 	
@@ -59,6 +59,23 @@ $(function () {
 				prev.removeClass('hovered_head');
 				
 			});
+			
+	$('.thelink').click(function(e) {
+        e.preventDefault();		
+		var url = $(this).attr('data-href');
+		
+		$.get(url, function(d) {
+			$('.modal-content').html(d);
+		});
+    });	
+	
+	$('#myModal').on('hidden.bs.modal', function (e) {
+		var url = window.location.href;
+		//window.location = url;
+		$('.modal-content').html('');
+		setTimeout(function() { $('.page-title').trigger('click'); }, 1000);
+	});
+	
 	
 	var whitebar = $('.whitebar');
 	var whitebar_parent = whitebar.parent();

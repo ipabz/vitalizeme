@@ -386,10 +386,17 @@ body {
 }
 
 .mymodal-popup-wrapper {
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	background: rgba(0,0,0,.3);
 	display: none;
+	z-index:9999;
+	overflow: auto;
+	height: 100%;
+}
+
+.mymodal-popup-wrapper.mpw-wrapper {
+	z-index:8888;
 }
 
 .mymodal-popup {
@@ -397,6 +404,14 @@ body {
 	margin: 62px auto 26px;
 	background: #fff;	
 	padding: 39px 86px;
+}
+
+.mymodal-popup.mmp {
+	width: 80%;
+}
+
+.topicview {
+	padding: 10px !important;	
 }
 
 .mymodal-popup .headerpart {
